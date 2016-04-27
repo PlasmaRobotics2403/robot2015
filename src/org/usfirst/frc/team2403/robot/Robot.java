@@ -195,9 +195,6 @@ public class Robot extends IterativeRobot {
 		else if(gamepad.getYButton().isPressed()){
 			lift.slantForward();
 		}
-    	
-    	
-    	
     }
     
     public void controlLift(){

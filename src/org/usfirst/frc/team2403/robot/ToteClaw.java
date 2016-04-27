@@ -1,6 +1,7 @@
 package org.usfirst.frc.team2403.robot;
 
 import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.Talon;
 
 public class ToteClaw {
