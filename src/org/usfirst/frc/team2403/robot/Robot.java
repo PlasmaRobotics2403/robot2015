@@ -156,6 +156,21 @@ public class Robot extends IterativeRobot {
     }
     
 
+    public void parkLift(){
+    	if(isPushed == true){
+			encValue = sensorPack.tote_enc.getDist();
+		}
+		isPushed = false;     
+		lift.toteClaw.stop(encValue);
+		
+		if(gamepad.getAButton().isPressed()){
+			lift.slantBackward();
+		}
+		else if(gamepad.getYButton().isPressed()){
+			lift.slantForward();
+		}
+    }
+    
     public void basicLift(){
     	if(gamepad.getRightTriggerAxis() > .1){
     		isPushed = true;
