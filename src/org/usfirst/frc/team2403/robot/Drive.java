@@ -1,6 +1,6 @@
 package org.usfirst.frc.team2403.robot;
 
-import edu.wpi.first.wpilibj.CANTalon;
+import com.ctre.CANTalon;
 
 /**
  * Drive system class
